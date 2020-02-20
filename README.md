@@ -1,3 +1,4 @@
-# Trombin-o-clock-zenith
+# Challenge Trombin
 
-[lien vers le projet](https://github.com/O-clock-Zenith/Trombin-o-clock-zenith/projects/1)
+La bd est dans le dossier app/data  
+un dossier .env doit etre crée avec l'adresse de la base de donées
