@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<h1>Étudiant : <%=first_name%> <%=last_name%></h1>
+
+<%- include ('partials/message') %>
+
+<form method="POST">
+    <p>
+        <label>Prénom</label>
+        <input type="text" name="first_name" value="<%=first_name%>">
+    </p>
+    <p>
+        <label>Nom</label>
+        <input type="text" name="last_name" value="<%=last_name%>">
+    </p>
+    <p>
+        <label>Pseudo Github</label>
+        <input type="text" name="github_username" value="<%=github_username%>">
+    </p>
+    <p>
+        <button>Valider</button>
+    </p>
+</form>
+<%- include('partials/footer') %>

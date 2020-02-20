@@ -1,0 +1,7 @@
+<% if(locals.message) { %>
+    <% let class_message = 'success' %>
+    <% if(locals.error){ %>
+        <% class_message = 'error' %>
+    <% } %>
+    <p class="message <%=class_message%>"><%=message%></p>
+<% } %>

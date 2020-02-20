@@ -1,0 +1,8 @@
+<%- include('partials/header') %>
+<h2>Liste des promos</h2>
+<ul class="cards">
+        <% for(let promo of promoList) { %>
+            <li class="card"><a href="/promo/<%= promo.id %>/<%= promo.name %>"><%= promo.name %></a></li>
+        <% } %>
+    </ul>
+<%- include('partials/footer') %>

@@ -1,0 +1,33 @@
+{
+  "name": "challenge_trombin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianaOliveiraMelo/challenge_trombin_oclock"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianaOliveiraMelo/challenge_trombin_oclock/issues"
+  },
+  "homepage": "https://github.com/JulianaOliveiraMelo/challenge_trombin_oclock#readme",
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "pg": "^7.14.0"
+  }
+}

@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<%# nouveau cas particulier, à cause de notre requête SQL avec jointure, le nom de la promo se retrouve dans chaque prof de celle-ci, afin d'affiocher le nom de la promo ; on prend le premier résultat et on demande d'affichier l'inde name qui correspond au nom de la promo %>
+<h2>Promo: <%=promoProfs[0].promo_name%></h2>
+<ul class="cards">
+    <%# Boucle classique, afin d'afficher la liste des profs %>
+    <% for(let prof of promoProfs) {%>
+        <li class="card">
+            <a href="/prof/<%=prof.prof_id%>">
+                <figure>
+                    <img src="http://github.com/<%=prof.github_username%>.png" alt="<%=prof.github_username%>">
+                    <figcaption><%=prof.first_name%> <%=prof.last_name%></figcaption>
+                </figure>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+<%- include('partials/footer') %>

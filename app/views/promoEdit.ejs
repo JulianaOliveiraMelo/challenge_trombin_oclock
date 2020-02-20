@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+
+
+<h1>Promo : <%= name%></h1>
+
+<%- include ('partials/message') %>
+
+<form method="POST">
+    <p>
+        <label>Nom</label>
+        <input type="text" name="name" value="<%= name%>">
+    </p>
+    <p>
+        <label>Github</label>
+        <input type="url" name="github_organization" value="<%= github_organization%>">
+    </p>
+    <p>
+        <button>Valider</button>
+    </p>
+</form>
+<%- include('partials/footer') %>

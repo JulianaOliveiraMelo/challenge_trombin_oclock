@@ -1,0 +1,6 @@
+<%- include('partials/header') %>
+    <h1>Erreur <%= status%></h1>
+    <% if(locals.message) { %>
+        <p><%= message %></p>
+    <% } %>
+<%- include('partials/footer') %>

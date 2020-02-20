@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="student">
+    <div class="student-avatar">
+        <img src="http://github.com/<%=github_username%>.png" alt="<%=github_username%>">
+    </div>
+    <div class="student-description">
+        <h1><%=first_name%> <%=last_name%></h1>
+        <p>Prof</p>
+        <p>Promo(s): 
+            <ul>
+                <% for (let promo of promoList) { %>
+                    <li><a href="/promo/<%=promo.id%>/<%=promo.name%>"><em><%=promo.name%></em></a></li>
+                <% } %>
+            </ul>
+            
+        </p>
+        <p>Pseudo Github : <em><%= github_username%></em></p>
+        <nav>
+            <ul>
+                <li><a href="/prof/<%= prof_id %>/edit">Modifier le prof</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<%- include('partials/footer') %>

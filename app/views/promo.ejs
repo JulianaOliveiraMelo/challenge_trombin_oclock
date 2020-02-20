@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h1>Promo : <%= name %></h1>
+<p>Github : <a href="<%= github_organization %>"><%= github_organization %></a></p>
+<nav>
+    <ul>
+        <li><a href="/promo/<%= id %>/student">Liste des étudiants</a></li>
+        <li><a href="/promo/<%= id %>/prof">Liste des profs</a></li>
+        <% if(locals.session.logged) { %>
+        <li><a href="/promo/<%= id %>/edit">Modifier la promo</a></li>
+        <% } %>
+    </ul>
+</nav>
+<%- include('partials/footer') %>

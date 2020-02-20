@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<div class="student">
+    <div class="student-avatar">
+        <img src="http://github.com/<%= github_username%>.png" alt="<%= github_username%>">
+    </div>
+    <div class="student-description">
+        <h1><%=first_name%> <%=last_name%></h1>
+        <p>Étudiant</p>
+        <p>Promo: <a href="/promo/<%=promo_id%>/<%=promo_name%>"><em><%=promo_name%></em></a></p>
+        <p>Pseudo Github : <em><%= github_username%></em></p>
+        <nav>
+            <ul>
+                <li><a href="/student/<%= id %>/edit">Modifier l'étudiant</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<%- include('partials/footer') %>
